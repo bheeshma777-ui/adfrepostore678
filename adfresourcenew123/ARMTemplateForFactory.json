@@ -27,7 +27,7 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "Copy data",
+						"name": "Copy_Source_To_Sink",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
