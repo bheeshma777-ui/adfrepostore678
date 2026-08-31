@@ -49,7 +49,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DS_Source_CSV",
+						"referenceName": "Copy_CSV_Source_To_Sink",
 						"type": "DatasetReference"
 					}
 				],

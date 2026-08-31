@@ -1,0 +1,57 @@
+{
+	"name": "Copy_CSV_Source_To_Sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "insurance_products.csv",
+				"folderPath": "source",
+				"fileSystem": "containers"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "policy_id",
+				"type": "String"
+			},
+			{
+				"name": "customer_id",
+				"type": "String"
+			},
+			{
+				"name": "policy_type",
+				"type": "String"
+			},
+			{
+				"name": "premium_amount",
+				"type": "String"
+			},
+			{
+				"name": "sum_assured",
+				"type": "String"
+			},
+			{
+				"name": "start_date",
+				"type": "String"
+			},
+			{
+				"name": "end_date",
+				"type": "String"
+			},
+			{
+				"name": "status",
+				"type": "String"
+			}
+		]
+	}
+}
