@@ -1,0 +1,23 @@
+{
+	"name": "DS_Sink_CSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "sink",
+				"fileSystem": "containers"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
